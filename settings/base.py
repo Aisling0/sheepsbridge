@@ -25,7 +25,6 @@ INSTALLED_APPS = [
     'django.contrib.flatpages',
     'django.contrib.sites',
     'django_forms_bootstrap',
-    'bootstrapform',
     'crispy_forms',
     'home',
     'contact',
