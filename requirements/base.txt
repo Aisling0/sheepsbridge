@@ -22,6 +22,6 @@ pytz==2017.2
 requests==2.20.0
 six==1.10.0
 stripe==1.55.2
-whitenoise==3.2
+whitenoise
 django-simple-captcha
 django_crispy_forms==1.7.2
