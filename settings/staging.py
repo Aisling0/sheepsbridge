@@ -10,7 +10,6 @@ DATABASES = {
     'default': dj_database_url.config('CLEARDB_DATABASE_URL')
 }
 
-
 SITE_URL = 'https://sheepsbridgekennels.herokuapp.com/'
 ALLOWED_HOSTS.append('sheepsbridgekennels.herokuapp.com')
 
