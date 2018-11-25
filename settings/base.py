@@ -11,7 +11,7 @@ SECRET_KEY = 'jc7ibrh_!6@*(02xsrsscn%by-^!=45_7onz+0q$4%e!to2&fl'
 
 ALLOWED_HOSTS = []
 
-SITE_ID = 1
+SITE_ID = 2
 
 # Application definition
 
@@ -35,7 +35,6 @@ INSTALLED_APPS = [
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-LOGIN_URL = '/login/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
