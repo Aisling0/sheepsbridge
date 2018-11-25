@@ -9,9 +9,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'jc7ibrh_!6@*(02xsrsscn%by-^!=45_7onz+0q$4%e!to2&fl'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'sheepsbridge.herokuapp.com']
 
 SITE_ID = 2
+INTERNAL_IPS = ('127.0.0.1',)
 
 # Application definition
 
