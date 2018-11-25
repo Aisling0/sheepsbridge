@@ -22,3 +22,4 @@ six==1.10.0
 stripe==1.55.2
 whitenoise==3.2
 django-simple-captcha
+django_crispy_forms
