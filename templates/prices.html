@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load bootstrap_tags %}
+<div class="container">
+    <!-- Page Heading/Breadcrumbs -->
+     <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Prices</li>
+    </ol>
+    <h1>Prices</h1>
+    <div class="row">
+        <div class="col-lg-6 col-sm-12">
+            <h2></h2>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Boarding Prices</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tr>
+                    {% for boarding in boardings %}
+                        <td>{{ boarding.name }}</td>
+                        <td>{{ boarding.price }}</td>
+                        </tr>
+                    {% endfor %}
+            </table>
+        <a href="https://www.kennelbooker.com/clientlogin.aspx?id=4f5e46c5-b7e3-47d8-a136-90b5f61f7cd4" target="_blank" class="btn">Book Now</a>
+        </div>
+
+        <div class="col-lg-6 col-sm-12">
+            <h2></h2>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Grooming Prices</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tr>
+                    {% for grooming in groomings %}
+                        <td>{{ grooming.name }}</td>
+                        <td>{{ grooming.price }}</td>
+                        </tr>
+                    {% endfor %}
+            </table>
+        <a href="{% url 'contact' %}" class="btn">Contact Us</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

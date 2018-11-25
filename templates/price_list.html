@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <!-- Page Heading/Breadcrumbs -->
+    <h1>Prices</h1>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Prices</li>
+    </ol>
+    <div class="row">
+        <div class="col-lg-4 col-sm-12">
+            <h1>{{ area.name }}</h1>
+            <div class="col-md-12">
+            {% for service in area.services.all %}
+                {% include "price.html" %}
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
